@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: radial-gradient(50% 50% at 50% 50%, #3029d9 0%, #3029d9 100%);
+
+  .left {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 33px;
+    }
+  }    .mobile {
+    display: none;
+  }
+
+  .middle {
+
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      color: rgb(175, 174, 242);
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .right {
+    button {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      border: white;
+      font-weight: 600;
+      line-height: 21px;
+
+      padding: 10px 20px;
+      border: 1px solid white;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    .right {
+      display: none;
+    }
+  
+    .middle {
+      display: none;
+    }
+
+    .mobile {
+      display: block;  // Change this to block to make the menu visible
+      cursor: pointer;
+
+      img {
+        width: 30px;  // Adjust the size of the hamburger icon
+        height: auto;
+      }
+    }
+  }
+}

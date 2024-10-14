@@ -1,0 +1,134 @@
+.section6 {
+  margin-top: 150px;
+  background: #111849;
+  width: 1470px;
+  height: 600px;
+
+  .mobile {
+    display: none;
+  }
+  .middle {
+    padding-top: 180px;
+    h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 68px;
+      text-align: center;
+      color: #5975ff;
+    }
+
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 68px;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .section6 {
+    width: 430px;
+    padding: 50px;
+
+    h2,
+    h4,
+    p {
+      color: white;
+    }
+    .middle {
+      display: none;
+    }
+    .mobile {
+
+
+      display: block;
+
+      align-items: center;
+      
+
+
+      .mobile-arrow{
+       display: flex;
+       align-items: center;
+       padding: 20px;
+       margin-left: 90px;
+       gap: 20px;
+
+
+       
+       img{
+        &.white{
+          display: flex;
+          background: white;
+          border-radius: 200px 0px 200px 200px;
+        }
+       }
+      }
+      h4 {
+        
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: left;
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        width: 328px;
+        color: #b8c6d6;
+
+        &.ceo {
+          font-family: "Poppins", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 34px;
+          text-align: left;
+          color: white;
+        }
+      }
+      .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        margin-left: 50px;
+        img {
+          border-radius: 100px 0px 100px 100px;
+        }
+      }
+      .txt {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+
+        h2 {
+      margin-top: 20px;
+
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+        }
+        h3 {
+          
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+          color: #5975ff;
+        }
+      }
+    }
+  }
+}

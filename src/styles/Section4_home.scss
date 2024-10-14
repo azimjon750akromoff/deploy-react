@@ -1,0 +1,68 @@
+.section4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .left {
+    margin-top: 50px;
+    
+    .praisez {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      .praise {
+        box-shadow: 0px 50px 100px 0px #0000001a;
+        padding: 20px;
+        &:nth-child(2){
+          margin-top: 100px;
+          // karoche ikta div qilish kere chapga + onga 
+        }
+        h5 {
+          font-family: "Poppins", sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 34px;
+          text-align: center;
+          width: 199px;
+        }
+      }
+    }
+  }
+
+  .right {
+    h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 68px;
+      color: #3029d9;
+    }
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 68px;
+      color: black;
+      width: 442px;
+    }
+    p {
+      margin-top: 25px;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: #a0abb8;
+      width: 473px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 430px) {
+  .section4{
+    display: none;
+  }
+}

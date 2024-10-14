@@ -1,0 +1,125 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 70px;
+
+  .right {
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .text {
+      display: block;
+      gap: 20px;
+      // align-items: center;
+    }
+  }
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+
+    .link {
+      display: grid;
+      gap: 20px;
+    }
+
+    h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+    }
+  }
+  .left {
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #a0abb8;
+    }
+    .logo-image {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .tf {
+      p {
+        margin-top: 20px;
+        width: 230px;
+      }
+    }
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 33px;
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 900px;
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+    color: #a0abb8;
+  }
+  .text {
+    display: flex;
+
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .text {
+      margin-left: 20px;
+    }
+    .one {
+      p {
+        margin-left: -300px;
+      }
+    }
+    // margin-left: 200px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: -45px;
+
+    .middle {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      .link {
+        h5 {
+          font-family: "Poppins", sans-serif;
+          font-size: 10px;
+          font-weight: 600;
+          line-height: 15px;
+        }
+      }
+    }
+    .right {
+      margin-top: 20px;
+    }
+  }
+}

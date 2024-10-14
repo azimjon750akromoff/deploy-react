@@ -1,0 +1,129 @@
+.section2 {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    h4 {
+      font-family: "Poppins", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 68px;
+      color: #3029d9;
+    }
+    h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 68px;
+    }
+  }
+
+  .offers {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .offer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      text-align: center;
+
+      box-shadow: 0px 10px 100px 10px #0000001a;
+
+      img {
+        align-self: center;
+      }
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: center;
+      }
+      p {
+        padding-top: 40px;
+        width: 259px;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        color: gray;
+      }
+    }
+    .offer:nth-child(1) {
+      color: black;
+
+      width: 374px;
+      height: 444px;
+      border-radius: 10px;
+      background: transparent;
+    }
+
+    .offer:nth-child(2) {
+      border-radius: 10px;
+      color: white;
+
+      width: 374px;
+      height: 444px;
+      background: #3029d9;
+    }
+
+    .offer:nth-child(3) {
+      border-radius: 10px;
+      width: 374px;
+      color: white;
+      height: 444px;
+      background: #111849;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .section2 {
+    .offers{
+      display: flex;
+      // flex-direction: column;
+      overflow: scroll;
+      justify-content: space-between;
+      gap:80px;
+      padding: 20px;
+      margin-left: 20px;
+      background: white;
+      .offer{
+        margin-left: 15px;
+        background: white;
+      }
+    }
+    h4 {
+      background: #5975ff;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: center;
+    }
+    h2 {
+      
+      font-family: "Poppins", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      color: white;
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: column; 
+    background: #3029d9;    
+}
+}
